@@ -58,11 +58,11 @@ public class Test {
                     continue;
                 }
                 if (className.equalsIgnoreCase("Math")) {
-                    Student mathStudent = new MathStudent(firstName, lastName, age, gender,className);
+                    MathStudent mathStudent = new MathStudent(firstName, lastName, age, gender,className);
                     students.add(mathStudent);
                     countOfMathStudents++;
                 } if(className.equalsIgnoreCase("Science")) {
-                    Student scienceStudent = new ScienceStudent(firstName, lastName, age, gender,className);
+                    ScienceStudent scienceStudent = new ScienceStudent(firstName, lastName, age, gender,className);
                     students.add(scienceStudent);
                     countOfScienceStudents++;
             }
