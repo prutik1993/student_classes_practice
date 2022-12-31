@@ -1,4 +1,7 @@
-public class ScienceStudent {
+public class ScienceStudent extends Student {
+    public ScienceStudent(String firstName, String lastName, int age, String gender, String className) {
+        super(firstName, lastName, age, gender, className);
+    }
 
     //COMPLETE THIS CLASS AFTER STUDENT CLASS
     //ScienceStudent must extend to Student class - do whatever it requires
