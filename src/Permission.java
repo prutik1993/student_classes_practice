@@ -13,7 +13,7 @@ public class Permission {
      */
     public static void checkAge(int age){
         if(age <= 20)
-            throw new RuntimeException(age + " is not allowed!");
+            throw new RuntimeException(age + " is not allowed! Sorry you too young for this program!");
     }
 
 
@@ -29,6 +29,6 @@ public class Permission {
      */
     public static void checkClassName(String className){
         if(!className.equalsIgnoreCase("Math") && !className.equalsIgnoreCase("Science"))
-            throw new RuntimeException(className + " is not allowed!");
+            throw new RuntimeException(className + " is not allowed! Sorry we don't have this class available!");
     }
 }
