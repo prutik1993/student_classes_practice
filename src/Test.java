@@ -30,7 +30,6 @@ public class Test {
         int countOfMathStudents = 0;
         int countOfScienceStudents = 0;
 
-
         while (students.size() < 3){
             System.out.println(UserQuestions.askToJoin);
             if(input.nextLine().equalsIgnoreCase("Y")){
@@ -58,7 +57,6 @@ public class Test {
                     System.out.println(e.getMessage());
                     continue;
                 }
-
                 if (className.equalsIgnoreCase("Math")) {
                     Student mathStudent = new MathStudent(firstName, lastName, age, gender,className);
                     students.add(mathStudent);
@@ -68,10 +66,8 @@ public class Test {
                     students.add(scienceStudent);
                     countOfScienceStudents++;
             }
-
                 System.out.println("Congratulations! You are registered for " + className + " class.");
             }
-
         }
 
         for (Student student : students) {

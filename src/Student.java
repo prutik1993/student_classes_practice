@@ -11,7 +11,6 @@ public class Student {
         this.gender = gender;
         this.className = className;
     }
-
     /*
         HERE!
         Create private instance variables as below
@@ -27,8 +26,6 @@ public class Student {
     private int age;
     private String gender;
     private String className;
-
-
 
     /*
     HERE!

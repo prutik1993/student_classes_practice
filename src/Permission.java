@@ -2,8 +2,7 @@ public class Permission {
 
     //COMPLETE THIS CLASS BEFORE TEST CLASS
 
-
-     /*
+    /*
      HERE!
      Create a method checkAge
      The method will be public static void
@@ -15,9 +14,6 @@ public class Permission {
         if(age <= 20)
             throw new RuntimeException(age + " is not allowed! Sorry you too young for this program!");
     }
-
-
-
 
     /*
     HERE!
