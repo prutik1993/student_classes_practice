@@ -42,6 +42,7 @@ public class Test {
                 try {
                     Permission.checkAge(age);
                 } catch (RuntimeException e) {
+                    //e.printStackTrace();
                     System.out.println(e.getMessage());
                     continue;
                 }
@@ -58,6 +59,7 @@ public class Test {
                     Permission.checkClassName(className);
 
                 } catch (RuntimeException e) {
+                    //e.printStackTrace();
                     System.out.println(e.getMessage());
                     continue;
                 }
@@ -65,7 +67,7 @@ public class Test {
                     MathStudent mathStudent = new MathStudent(firstName, lastName, age, gender,className);
                     students.add(mathStudent);
                     countOfMathStudents++;
-                } if(className.equalsIgnoreCase("Science")) {
+                } else{
                     ScienceStudent scienceStudent = new ScienceStudent(firstName, lastName, age, gender,className);
                     students.add(scienceStudent);
                     countOfScienceStudents++;
@@ -77,6 +79,7 @@ public class Test {
         for (Student student : students) {
             System.out.println(student);
         }
+        //students.forEach(System.out::println);
 
         System.out.println("Math students = " + countOfMathStudents);
         System.out.println("Science students = " + countOfScienceStudents);
