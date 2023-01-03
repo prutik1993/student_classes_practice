@@ -5,7 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         //COMPLETE THIS CLASS AFTER ALL THE OTHER CLASSES
-
         /*
         Write a code that asks user to if they would like join your classes
         If the answer is "Yes" from user,then ask user information; firstName, lastName, age, gender, class to join
@@ -48,6 +47,11 @@ public class Test {
                 }
                 System.out.println(UserQuestions.askGender);
                 String gender = input.nextLine();
+                while(!(gender.equalsIgnoreCase("f") || gender.equalsIgnoreCase("m"))){
+                    System.out.println(UserQuestions.askGender);
+                    gender = input.nextLine();
+                }
+
                 System.out.println(UserQuestions.askClassName);
                 String className = input.nextLine();
                 try {
